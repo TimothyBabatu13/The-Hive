@@ -3,7 +3,7 @@ import Form from "./components/Form"
 
 const page = () => {
   return (
-    <div className="p-4 flex-1 flex flex-col items-center justify-center w-full max-w-2xl gap-4 md:gap-8">
+    <div className="p-4 flex-1 flex flex-col items-center justify-center w-full max-w-2xl mx-auto gap-4 md:gap-8">
      <div className="h-full w-full">
       <div className="text-center flex flex-col items-center gap-4">
           <Image 
