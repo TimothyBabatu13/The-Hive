@@ -12,20 +12,27 @@ export default function RootLayout({
     <SidebarProvider>
       <AppSidebar />
       <main
-        className={``}
+        className={`w-full`}
       >
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-           <div className="flex items-center justify-between !w-full flex-1">
-            <SidebarTrigger />
-            <Header />
-           </div>
-            {children}
-          </ThemeProvider>
+        <div
+          // style={{boxShadow: '(0 0 #0000, 0 0 #0000), 0 0 #0000, 0 0 #0000),  0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1)'}} 
+          className="m-2 border  border-[#e5e7eb] rounded-[6px]">
+          <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+            <div className="flex items-center justify-between p-4 !w-full flex-1  border-b">
+              <div className="flex gap-2 items-center">
+                <SidebarTrigger />
+                <div data-orientation="vertical" role="none" className="shrink-0 bg-neutral-200 dark:bg-neutral-800 w-[1px] h-4"></div>
+              </div>
+              <Header />
+            </div>
+              {children}
+            </ThemeProvider>
+        </div>
       </main>
     </SidebarProvider>
     
