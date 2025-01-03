@@ -2,13 +2,13 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { ThemeProvider } from "@/context/theme-provider";
 import { AppSidebar } from "../components/app-sidebar";
 import Header from "./components/header";
-import { Geist, DM_Mono } from "next/font/google";
+// import { DM_Mono } from "next/font/google";
 
-const DMMONO = DM_Mono({
-  variable: "--font-dm_mono",
-  subsets: ["latin"],
-  weight: ['300', '400', '500']
-});
+// const DMMONO = DM_Mono({
+//   variable: "--font-dm_mono",
+//   subsets: ["latin"],
+//   weight: ['300', '400', '500']
+// });
 
 export default function RootLayout({
   children,
