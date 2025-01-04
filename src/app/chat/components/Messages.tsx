@@ -10,7 +10,7 @@ const Message = ( { id, content } : {
     return(
         <div 
             className="flex w-full px-2 py-4 max-w-full last:border-b-0 first:pt-0 flex-col gap-2 md:flex-row md:gap-4 md:px-4 border-b border-gray-200 dark:border-neutral-700 "
-            style={{borderBottomColor: 'rgb(229, 231, 235)'}}
+            style={{borderBottomColor: 'rgb(229, 231, 235)' , marginRight: `${id}`}}
         >
             <div 
                 className="flex items-center md:items-start gap-4"
@@ -36,7 +36,7 @@ const Message = ( { id, content } : {
 
 const Messages = () => {
     const { isThinking } = useChatProvider()
-    
+
   return (
     <div className="">
         <Message id="" content="Hell"/>
