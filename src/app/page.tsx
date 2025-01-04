@@ -1,4 +1,4 @@
-import GraphComponent from "./components/animation";
+// import GraphComponent from "./components/animation";
 import { BorderBeam } from "./components/BorderBeam";
 import { GetStartedButton } from "./components/buttons";
 
@@ -11,7 +11,7 @@ export default function Home() {
         <GetStartedButton />
       </div>
       <div className="w-full flex-1 max-w-2xl rounded-md border border-neutral-200 dark:border-neutral-700 relative">
-        <GraphComponent />
+        {/* <GraphComponent /> */}
         <BorderBeam />
       </div>
     </div>
