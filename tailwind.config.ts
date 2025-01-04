@@ -65,7 +65,11 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		animation: {
+			'shiny-text': 'shiny-text 8s infinite',
+			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
