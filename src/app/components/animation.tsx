@@ -91,7 +91,7 @@ import {
   Background,
   useNodesState,
   useEdgesState,
-  addEdge,
+  // addEdge,
 } from '@xyflow/react';
 
 import '@xyflow/react/dist/style.css';
@@ -107,7 +107,7 @@ function GraphComponent() {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
-  const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
+  // const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
   console.log(setNodes)
   return (
     <ReactFlow
@@ -115,7 +115,7 @@ function GraphComponent() {
       edges={edges}
       onNodesChange={onNodesChange}
       onEdgesChange={onEdgesChange}
-      onConnect={onConnect}
+      // onConnect={onConnect}
     >
       <MiniMap />
       <Controls />
