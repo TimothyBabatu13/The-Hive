@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className={``}>
+    <div className={` overflow-hidden`}>
       <SidebarProvider>
       <AppSidebar />
       <main
@@ -24,7 +24,7 @@ export default function RootLayout({
       >
         <div
           // style={{boxShadow: '(0 0 #0000, 0 0 #0000), 0 0 #0000, 0 0 #0000),  0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1)'}} 
-          className="m-2 border  border-[#e5e7eb] rounded-[6px]">
+          className="m-2 border  border-[#e5e7eb] rounded-[6px] h-full max-h-full overflow-y-scroll">
           <ThemeProvider
               attribute="class"
               defaultTheme="system"
