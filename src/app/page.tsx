@@ -1,4 +1,4 @@
-import Animation from "./components/animation";
+import GraphComponent from "./components/animation";
 import { GetStartedButton } from "./components/buttons";
 
 export default function Home() {
@@ -9,8 +9,7 @@ export default function Home() {
         <h2>A modular network of interoperable Defi agents</h2>
         <GetStartedButton />
       </div>
-
-      <Animation />
+      <GraphComponent />
     </div>
   );
 }
