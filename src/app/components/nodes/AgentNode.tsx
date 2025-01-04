@@ -3,6 +3,7 @@ import { Handle, Position } from '@xyflow/react';
 import { IconName } from './icons/types';
 import { Icon } from './icons/icon';
 
+
 interface AgentNodeProps {
   data: {
     icon: IconName;
