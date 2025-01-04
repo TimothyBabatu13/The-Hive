@@ -108,7 +108,7 @@ function GraphComponent() {
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
   const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
-
+  console.log(setNodes)
   return (
     <ReactFlow
       nodes={nodes}
