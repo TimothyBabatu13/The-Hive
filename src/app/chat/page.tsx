@@ -1,4 +1,4 @@
-import Messages from "./components/Messages"
+// import Messages from "./components/Messages"
 import NoMessage from "./components/NoMessage"
 
 const page = () => {
