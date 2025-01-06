@@ -25,7 +25,7 @@ export function TeamSwitcher() {
                     <Image 
                         width={50}
                         height={50}
-                        src={'/logo.png'}
+                        src={'/logo.PNG'}
                         alt="logo"
                     />
                     <span className="text-lg font-bold">Truthmatrix</span>

@@ -17,7 +17,7 @@ const NoMessage = () => {
                     alt="logo"
                     width={100}
                     height={100}
-                    src={'/logo.png'}
+                    src={'/logo.PNG'}
                   />
                   <div className="flex flex-col gap-1">
                     <h3 className="font-semibold text-2xl">How can <span className="text-[#2f9999] font-bold inline">We</span> help you?</h3>
