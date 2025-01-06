@@ -28,7 +28,7 @@ export function TeamSwitcher() {
                         src={'/logo.png'}
                         alt="logo"
                     />
-                    <span className="text-lg font-bold">The Hive</span>
+                    <span className="text-lg font-bold">Truthmatrix</span>
                 </Link>
             </SidebarMenuButton>
       </SidebarMenuItem>
