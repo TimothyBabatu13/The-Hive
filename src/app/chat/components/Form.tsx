@@ -2,7 +2,7 @@
 'use client';
 
 import { useChatProvider } from "@/hooks/use-chat";
-import {  FormEvent, useEffect, useRef, useState } from "react";
+import {  FormEvent, useRef, useState } from "react";
 
 const Form = () => {
     const { submitForm, isThinking } = useChatProvider();
@@ -24,7 +24,8 @@ const Form = () => {
     }
 
    const reff = useRef<HTMLFormElement | null>(null)
-   
+
+
   return (
     <div className="flex flex-col w-full">
         <form 
