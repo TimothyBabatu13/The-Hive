@@ -34,7 +34,7 @@ export default function RootLayout({
                 enableSystem
                 disableTransitionOnChange
               >
-              <div className="flex items-center justify-between p-4 !w-full flex-1  border-b">
+              <div className="flex items-center justify-between p-4 !w-full flex-1 mb-4  border-b">
                 <div className="flex gap-2 items-center">
                   <SidebarTrigger />
                   <div data-orientation="vertical" role="none" className="shrink-0 bg-neutral-200 dark:bg-neutral-800 w-[1px] h-4"></div>

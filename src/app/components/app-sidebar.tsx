@@ -37,7 +37,7 @@ const data = {
     },
     {
       title: "Docs",
-      url: "/docs",
+      url: "/chat/docs",
       icon: Book,
     },
     {

@@ -21,7 +21,7 @@ const NoMessage = () => {
                   />
                   <div className="flex flex-col gap-1">
                     <h3 className="font-semibold text-2xl">How can <span className="text-[#2f9999] font-bold inline">We</span> help you?</h3>
-                    <h4 className="text-sm text-neutral-600 dark:text-neutral-400">Orchestrate a hive mind of Defi Agents to act on Solana</h4>
+                    <h4 className="text-sm text-neutral-600 dark:text-neutral-400">Orchestrate a truthmatrix mind of Defi Agents to act on Solana</h4>
                   </div>
                 </div>
             </div>

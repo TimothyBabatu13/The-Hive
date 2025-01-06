@@ -10,6 +10,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export function NavMain({
   items,
@@ -21,13 +22,19 @@ export function NavMain({
     isActive?: boolean
   }[]
 }) {
+
+  const pathName = usePathname();
+
   return (
     <SidebarGroup>
       <SidebarGroupLabel>Platform</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
-            <SidebarMenuItem key={item.title}>
-                <SidebarMenuButton asChild tooltip={item.title}>
+            <SidebarMenuItem 
+              className={`${item.url === pathName && 'text-[#2f9999] '}`} 
+              key={item.title}
+            >
+                <SidebarMenuButton asChild className="hover:text-[#2f9999]" tooltip={item.title}>
                   <Link href={item.url}>
                     {item.icon && <item.icon />}
                     <span>{item.title}</span>

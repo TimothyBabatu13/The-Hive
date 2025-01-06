@@ -20,7 +20,7 @@ const LoadingMessage: React.FC = () => {
         )}>
             <div className="flex items-center md:items-start gap-2">
                 <Image 
-                    src="/logo-dark.webp" 
+                    src="/logo.PNG" 
                     alt="Logo" 
                     width={100} 
                     height={100} 
