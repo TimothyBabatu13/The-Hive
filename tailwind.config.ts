@@ -16,6 +16,19 @@ export default {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
   			},
+			  brand: {
+				'50': '#ffffe7',
+				'100': '#ffffc1',
+				'200': '#fffb86',
+				'300': '#fff041',
+				'400': '#ffe00d',
+				'500': '#ffd100',
+				'600': '#d19900',
+				'700': '#a66d02',
+				'800': '#89550a',
+				'900': '#74450f',
+				'950': '#442404'
+			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
@@ -69,6 +82,21 @@ export default {
 		animation: {
 			'shiny-text': 'shiny-text 8s infinite',
 			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
+		},
+		keyframes: {
+			'shiny-text': {
+				'0%, 90%, 100%': {
+					'background-position': 'calc(-100% - var(--shiny-width)) 0'
+				},
+				'30%, 60%': {
+					'background-position': 'calc(100% + var(--shiny-width)) 0'
+				}
+			},
+			'border-beam': {
+				'100%': {
+					'offset-distance': '100%'
+				}
+			}
 		}
   	}
   },

@@ -23,9 +23,9 @@ export function TeamSwitcher() {
                     className="flex items-center gap-2"
                 > 
                     <Image 
-                        width={32}
-                        height={32}
-                        src={'/logo-dark.webp'}
+                        width={50}
+                        height={50}
+                        src={'/logo.png'}
                         alt="logo"
                     />
                     <span className="text-lg font-bold">The Hive</span>

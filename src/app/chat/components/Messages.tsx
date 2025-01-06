@@ -2,6 +2,7 @@
 import { User } from "lucide-react"
 import LoadingMessage from "./loading-message";
 import { useChatProvider } from "@/hooks/use-chat";
+import Form from "./Form";
 
 const Message = ( { id, content } : {
     id: string,
@@ -36,11 +37,12 @@ const Message = ( { id, content } : {
 
 const Messages = () => {
     const { isThinking } = useChatProvider()
-
+    
   return (
     <div className="">
         <Message id="" content="Hell"/>
         {isThinking && <LoadingMessage />}
+        <Form />
     </div>
   )
 }

@@ -4,7 +4,8 @@ import { createContext, useContext, useState } from "react";
 
 interface contextProps {
     isThinking: boolean,
-    submitForm: () => Promise<void>
+    submitForm: () => Promise<void>,
+    messages: [] 
 
 }
 const context = createContext< contextProps | null>(null)
@@ -30,7 +31,8 @@ const ChatProvider = ({ children } : {
 
     const value: contextProps = {
         isThinking,
-        submitForm
+        submitForm,
+        messages: []
     }
   return (
     <context.Provider 

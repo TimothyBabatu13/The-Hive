@@ -15,7 +15,7 @@ const Form = () => {
     <div className="flex flex-col w-full">
         <form 
             onSubmit={handleSubmit}
-            className="w-full rounded-md flex flex-col overflow-hidden transition-colors duration-200 ease-in-out border border-transparent shadow-lg bg-neutral-100 focus-within:border-brand-600 dark:bg-neutral-800/50 dark:focus-within:border-brand-600"
+            className="w-full rounded-md flex flex-col overflow-hidden transition-colors duration-200 ease-in-out border border-transparent shadow-lg bg-neutral-100 focus-within:border-[#2f9999] dark:bg-neutral-800/50 "
         >
             <textarea /*tabindex="0" */ 
                 placeholder="Ask the hive anything..." 
